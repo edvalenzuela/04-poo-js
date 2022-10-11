@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shopping | JS Essentials</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="container mt-5">
+    
+    <div class="row shopping d-flex justify-content-center" id="app">
+      <div class="col-md-8">
+        <div class="card w-100">
+          <div class="card-header bg-dark">
+            <h4 class="text-center bg-dark text-white text-uppercase">add here ! your new product</h4>
+          </div>
+          <form id="product-form" class="card-body">
+            <div class="form-group">
+              <input type="text" id="product-name" placeholder="Product name" class="form-control">
+            </div>
+            <div class="form-group mt-3 mb-3">
+              <input type="number" id="product-price" step="0.01" placeholder="Product price" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="number" id="product-year" min="1900" step="1" placeholder="year" class="form-control">
+            </div>
+            <input type="submit" value="Save" class="btn btn-danger w-100 mt-5">
+          </form>
+        </div>
+      </div>
+    </div>
+
+		<div class="row shopping">
+			<div class="col-md-12 shopping__products" id="product-list">
+				<!-- CARDS -->
+			</div>
+		</div>
+  </div>
+
+  <Script src="./app.js"></Script>
+</body>
+
+</html>
